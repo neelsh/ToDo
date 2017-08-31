@@ -1,0 +1,45 @@
+{
+  "name": "todo",
+  "version": "1.0.0",
+  "description": "Create a to-do list using React",
+  "main": "index.js",
+  "babel": {
+    "presets": [
+      "react",
+      "es2015"
+    ]
+  },
+  "scripts": {
+    "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js --hot",
+    "build": "webpack",
+    "watch": "webpack-dev-server --content-base dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/neelsh/ToDo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/neelsh/ToDo/issues"
+  },
+  "homepage": "https://github.com/neelsh/ToDo#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "eslint": "^4.5.0",
+    "eslint-plugin-react": "^7.3.0",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "webpack": "^3.5.5",
+    "webpack-dev-server": "^2.7.1"
+  },
+  "dependencies": {
+    "babel-preset-react-es2015": "^1.3.0",
+    "react-bootstrap": "^0.31.2"
+  }
+}
