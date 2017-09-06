@@ -1,13 +1,23 @@
-function addItem(todoItem) {
-  let todoItems = [];
+class TodoList {
+  constructor() {
+    this.items = []
+  }
 
-  todoItems = todoItem;
-  return todoItems;
-}
+  add(item) {
+    this.items.push(item)
+  }
 
-function removeItem(todoItem) {
-  let todoItems = ["Grocery shop"];
+  toggle(itemId) {
+    this.items.forEach((item) => {
+      if (itemId === item.id)
+        item.completed = true
+    })
+  }
 
-  todoItems.splice(0,1);
-  return todoItems;
+  delete(itemId) {
+    const index = this.items.findIndex((item) => {
+      return itemId === item.id
+    })
+    this.items.splice(index, 1)
+  }
 }
